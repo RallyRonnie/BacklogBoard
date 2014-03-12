@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backlog Board</title>
+
+    <script type="text/javascript" src="/apps/2.0rc2/sdk.js"></script>
+
+    <script type="text/javascript">
+        Rally.onReady(function () {
+                Ext.define("BLBoard",{extend:"Rally.app.App",componentCls:"app",launch:function(){cardBoardConfig&&cardBoardConfig.destroy();var addNewConfig={xtype:"rallyaddnew",recordTypes:["User Story","Defect"],ignoredRequiredFields:["Name","ScheduleState","Project"],listeners:{create:function(addNew,record){Ext.Msg.alert("Add New","Added record named "+record.get("Name"))}},showAddWithDetails:!0},cardBoardConfig={xtype:"rallycardboard",types:["User Story","Defect"],attribute:"Project",showPlanEstimate:!1,columns:[{value:"/project/719347",columnHeaderConfig:{headerTpl:"{project}",headerData:{project:["Consumer Program / ART","Backlog"]}}},{value:"/project/711738",columnHeaderConfig:{headerTpl:"{project}",headerData:{project:"Agile Team 1"}}},{value:"/project/712193",columnHeaderConfig:{headerTpl:"{project}",headerData:{project:"Agile Team 2"}}},{value:"/project/712214",columnHeaderConfig:{headerTpl:"{project}",headerData:{project:"Agile Team 3"}}}],cardConfig:{fields:["Parent","Feature","Discussion","PlanEstimate"],editable:!0,showIconMenus:!0,showBlockedReason:!0},storeConfig:{filters:[{property:"ScheduleState",operator:"<",value:"In-Progress"},{property:"Iteration",operator:"=",value:""}],sorters:[{property:"Rank",direction:"ASC"}],context:this.getContext().getDataContext()}};this.add(addNewConfig),this.add(cardBoardConfig)}});
+
+            Rally.launchApp('BLBoard', {
+                name:"Backlog Board",
+	            parentRepos:""
+            });
+
+        });
+    </script>
+
+
+    <style type="text/css">
+        .app {
+     /* Add app styles here */
+}
+
+    </style>
+</head>
+<body></body>
+</html>
