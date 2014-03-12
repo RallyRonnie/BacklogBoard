@@ -1,8 +1,8 @@
-Random App Name53041
+Backlog Board
 =========================
 
 ## Overview
-
+This app utilizes the Rally cardboard to display story and defect cards in project (team) columns allowing the user to drag-and-drop stories/defects into other projects backlogs.
 
 ## License
 
