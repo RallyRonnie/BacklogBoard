@@ -2,7 +2,11 @@ Backlog Board
 =========================
 
 ## Overview
-This app utilizes the Rally cardboard to display story and defect cards in project (team) columns allowing the user to drag-and-drop stories/defects into other projects backlogs.
+This app utilizes a custom Rally cardboard to display story and defect cards in project (team) columns allowing the user to drag-and-drop stories/defects into other projects backlogs. You can also add new items to the left-most backlog (project).
+
+## Screen Shot
+
+![Team Board Example](https://github.com/RallyRonnie/BacklogBoard/blob/master/screenshot.png)
 
 ## License
 
