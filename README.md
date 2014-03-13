@@ -6,7 +6,7 @@ This app utilizes a custom Rally cardboard to display story and defect cards in 
 
 ## Screen Shot
 
-![Team Board Example](https://github.com/RallyRonnie/BacklogBoard/blob/master/screenshot.png)
+![Team Board Example](https://github.com/RallyRonnie/BacklogBoard/master/screenshot.png)
 
 ## License
 
