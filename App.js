@@ -3,7 +3,6 @@ Ext.define('BLBoard', {
 	componentCls: 'app',
 //	items:{ html:'<a href="https://help.rallydev.com/apps/2.0rc2/doc/">App SDK 2.0rc2 Docs</a>'},
 	launch: function() {
-		var pcolumns = '[';
 		var ppicker = Ext.create('Ext.Container', {
 			items: [{
 				xtype: 'rallymultiobjectpicker',
@@ -25,8 +24,8 @@ Ext.define('BLBoard', {
 							var pcolumn = "{ value: '/project/" + pn.get('ObjectID') + "', columnHeaderConfig: { headerTpl: '{project}', headerData: { project: '" + pn.get('Name') + "' } } }";
 							pcolumns = pcolumns + pcolumn + ",";
 
-							console.log("name: " + pn.get("Name"));
-							console.log("OID: " + pn.get("ObjectID"));
+//							console.log("name: " + pn.get("Name"));
+//							console.log("OID: " + pn.get("ObjectID"));
 						});
 						pcolumns = pcolumns.substring(0, pcolumns.length - 1) + "]";
 						console.log(p.getValue());
