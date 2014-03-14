@@ -5,13 +5,14 @@ Ext.define('BLBoard', {
 //	items:{ html:'<a href="https://help.rallydev.com/apps/2.0rc2/doc/">App SDK 2.0rc2 Docs</a>'},
 	launch: function() {
 //
-// SET TO true TO USE PROJECT MULTI-SELECT OR SET TO false TO USE CURRENT PROJECT AND CHILDREN
+// SET usePicker TO true TO USE PROJECT MULTI-SELECT OR SET TO false TO USE CURRENT PROJECT AND CHILDREN
+//
+		var usePicker = false;
 //
 		var ppicker = null;
 		var cardBoardConfig = null;
 		var addNewConfig = null;
 		var pcolumns = '[';
-		var usePicker = false;
 		if (!usePicker) {
 			var cproj = this.getContext().getProject().ObjectID;
 			var cname = this.getContext().getProject().Name;
