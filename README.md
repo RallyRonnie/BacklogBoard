@@ -2,7 +2,7 @@ Backlog Board
 =========================
 
 ## Overview
-This app utilizes a custom Rally cardboard to display story and defect cards in project (team) columns allowing the user to drag-and-drop stories/defects into other projects backlogs. You can also add new items to the scoped project backlog.
+This app utilizes an SDK 2.0 custom Rally cardboard to display story and defect cards in project (team) columns allowing the user to drag-and-drop stories/defects into other projects backlogs. You can also add new items to the scoped project backlog.
 
 The current version defaults to using your currently scoped project and children as project columns for the board. You can edit the code to provide a project picker which allows you to pick the projects displayed as columns on the board. If you use the Project Picker option, it is recommended to set your Rally Project scope to the highest level you might choose backlogs from. This will ensure that all story/defect records are placed on the board.
 
