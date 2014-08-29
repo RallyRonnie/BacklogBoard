@@ -97,7 +97,7 @@ Ext.define('BLBoard', {
 				attribute: 'Project',
 				columns: eval(pcolumns),
 					cardConfig: {
-						fields: ['Parent', 'Feature', 'Discussion', 'PlanEstimate'],
+						fields: ['Parent', 'Feature', 'Tasks', 'Discussion', 'PlanEstimate'],
 						editable: true,
 						showIconMenus: true,
 						showBlockedReason: true

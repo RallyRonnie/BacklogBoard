@@ -2,7 +2,7 @@
    "name": "Backlog Board",
    "className": "BLBoard",
    "server": "https://rally1.rallydev.com",
-   "sdk": "2.0rc2",
+   "sdk": "2.0rc3",
    "javascript": [
       "App.js"
    ],
