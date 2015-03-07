@@ -3,7 +3,7 @@
 <head>
     <title>Backlog Board</title>
 
-    <script type="text/javascript" src="/apps/2.0rc3/sdk.js"></script>
+    <script type="text/javascript" src="/apps/2.0/sdk.js"></script>
 
     <script type="text/javascript">
         Rally.onReady(function () {
@@ -106,7 +106,7 @@
 				attribute: 'Project',
 				columns: eval(pcolumns),
 					cardConfig: {
-						fields: ['Parent', 'Feature', 'Tasks', 'Discussion', 'PlanEstimate'],
+						fields: ['Parent', 'Feature', 'Tasks', 'Discussion', 'PlanEstimate', 'Release'],
 						editable: true,
 						showIconMenus: true,
 						showBlockedReason: true
@@ -140,10 +140,11 @@
 
     <style type="text/css">
         .app {
-     /* Add app styles here */
+  /* Add app styles here */
 }
 
     </style>
 </head>
-<body></body>
+<body>
+</body>
 </html>
